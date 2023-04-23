@@ -11,7 +11,7 @@ class Dog {
         const {hasBeenSwiped, hasBeenLiked} = this
         if (hasBeenSwiped && hasBeenLiked) {
             return `
-                <img src="images/badge-link.png">
+                <img src="images/badge-like.png">
             `
         } else if (hasBeenSwiped) {
             return `
@@ -28,6 +28,9 @@ class Dog {
         return `
             <div class="dog-card">
                 <img class="dog-img" src=${avatar}>
+                <div class="swiped">
+                    ${dogSwipedHtml}
+                </div>
                 <div class="dog-info">
                     <p class="dog-name-age">${name}, ${age}</p>
                     <p class="dog-bio">${bio}</p>

@@ -75,6 +75,18 @@ nav {
     border-radius: 12px;
 }
 
+.swiped {
+    width: 234px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    transform: rotate(330deg);
+}
+
+.swiped > img {
+    width: 100%;
+}
+
 /* button styling */
 
 .btn-container {
@@ -100,12 +112,14 @@ nav {
     cursor: pointer;
 }
 
-.btn-like:hover {
+.btn-like:hover,
+.btn-like:focus {
     background-color: #DBFFF4;
     box-shadow: 2px 2px 2px 1px rgba(204, 241, 230, 0.2);
 }
 
-.btn-nope:hover {
+.btn-nope:hover,
+.btn-nope:focus {
     color: rgb(237, 217, 223);
     background-color: #FFE7EF;
     box-shadow: 2px 2px 2px 1px rgba(237, 217, 223, 0.2);
