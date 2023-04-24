@@ -26,6 +26,7 @@ function dogSwiped() {
 
 function getNewDog() {
     const nextDogData = dogs.shift()
+    dogs.push(nextDogData)
     return nextDogData ? new Dog(nextDogData) : {}
 }
 
